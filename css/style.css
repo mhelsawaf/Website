@@ -107,7 +107,31 @@ body.is-loaded .site-header {
 .site-nav a:hover {
   color: var(--primary-color);
 }
+/* Publications */
+.publications {
+  padding: 2em 1em;
+}
 
+.publication-category {
+  margin-bottom: 2em;
+}
+
+.publication-category h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3em;
+}
+
+.publication-list {
+  list-style: decimal;
+  padding-left: 1.5em;
+}
+
+.publication-list li {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
 .site-nav a:hover::after {
   width: 100%;
 }
