@@ -107,6 +107,54 @@ body.is-loaded .site-header {
 .site-nav a:hover {
   color: var(--primary-color);
 }
+/* Experience */
+/* Experience section */
+#experience {
+  margin-top: 20px;
+}
+
+/* Job block */
+.job {
+  margin-bottom: 30px;
+}
+
+/* Job title */
+.title {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #004080;
+}
+
+/* Company name */
+.company {
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #555;
+}
+
+/* Date range */
+.date {
+  font-style: italic;
+  color: #888;
+  font-size: 0.95em;
+}
+
+/* Bullet points */
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Divider */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 30px 0;
+}
 /* Publications */
 .publications {
   padding: 2em 1em;
