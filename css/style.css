@@ -85,7 +85,12 @@ body.is-loaded .site-header {
   display: flex;
   gap: 1.5rem;
 }
-
+logo {
+  height: 50px;       /* Adjust size as needed */
+  width: auto;        /* Maintain aspect ratio */
+  display: block;
+  cursor: pointer;    /* Optional: shows pointer on hover */
+}
 .site-nav a {
   position: relative;
   text-decoration: none;
