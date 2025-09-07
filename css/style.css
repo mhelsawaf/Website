@@ -71,7 +71,8 @@ body.is-loaded {
 body.is-loaded .site-header {
   /* triggers animation on load */
 }
-
+/* Favicon */
+<link rel="icon" href="path/to/Favicon.png" type="image/png">
 /* Logo */
 .logo {
   font-size: 1.5rem;
