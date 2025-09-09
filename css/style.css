@@ -562,7 +562,7 @@ body.is-loaded {
 }
 
 /* Very small screens (phones in portrait) */
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   body {
     padding-top: 100px; /* Even more space for very small screens */
     padding-bottom: 90px;
@@ -610,12 +610,5 @@ body.is-loaded {
   .personal-photo {
     width: 100px;
     height: 100px;
-  }
-}
-
-/* TEST RULE - DELETE AFTER TESTING */
-@media (max-width: 480px) {
-  body {
-    background-color: red !important;
   }
 }
