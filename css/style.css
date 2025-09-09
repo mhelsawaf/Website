@@ -175,20 +175,6 @@ body.is-loaded {
   box-shadow: 0 -1px 4px rgba(0,0,0,0.05);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .tagline-card {
-    margin: 2rem 1rem;
-    padding: 1.5rem 1rem;
-  }
-  .tagline-card__line {
-    font-size: 1rem;
-  }
-  .site-nav ul {
-    gap: 0.75rem;
-  }
-}
-
 /* Clickable logo wrapper — no extra styling needed beyond resetting defaults */
 .site-logo-link {
   display: inline-block;
@@ -215,4 +201,267 @@ body.is-loaded {
 
 .personal-photo:hover {
   transform: scale(1.05);
+}
+
+/* LinkedIn Profile Section */
+#linkedin-profile {
+  max-width: 50ch;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px var(--card-shadow);
+  text-align: center;
+}
+
+#linkedin-profile h2 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+  font-weight: 500;
+}
+
+.linkedin-link:hover {
+  background: #005885;
+  transform: translateY(-2px);
+}
+
+.linkedin-link img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* makes the icon white */
+}
+
+/* Content Sections */
+.content-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: var(--bg-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px var(--card-shadow);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Experience Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job-card {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: #f8f9ff;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  position: relative;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--card-shadow);
+}
+
+.job-badge {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  height: fit-content;
+  min-width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.job-content {
+  flex: 1;
+}
+
+.job-title {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.job-meta span {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.company {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.job-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.job-highlights li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.job-highlights li:before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+}
+
+/* Publications */
+.publication-category {
+  margin-bottom: 3rem;
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+}
+
+.publications-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.publication-card {
+  background: #f8f9ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--primary-color);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.publication-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--card-shadow);
+}
+
+.pub-authors {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.pub-venue {
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-date, .pub-status {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.pub-status {
+  background: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .job-card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .job-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .content-section {
+    margin: 1rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tagline-card {
+    margin: 2rem 1rem;
+    padding: 1.5rem 1rem;
+  }
+  .tagline-card__line {
+    font-size: 1rem;
+  }
+  .site-nav ul {
+    gap: 0.75rem;
+  }
 }
