@@ -465,3 +465,140 @@ body.is-loaded {
     gap: 0.75rem;
   }
 }
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 480px) {
+  body {
+    padding-top: 70px; /* More space for mobile header */
+  }
+  
+  /* Header adjustments */
+  .site-header .container {
+    padding: 0 0.5rem;
+  }
+  
+  .site-logo {
+    max-height: 40px; /* Smaller logo on mobile */
+  }
+  
+  .site-nav ul {
+    gap: 0.5rem;
+  }
+  
+  .site-nav a {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Content sections */
+  .tagline-card {
+    margin: 1.5rem 0.5rem;
+    padding: 1.25rem 1rem;
+  }
+  
+  .tagline-card__line {
+    font-size: 0.95rem;
+  }
+  
+  .personal-photo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  /* Experience page mobile */
+  .content-section {
+    margin: 1rem 0.5rem;
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .job-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  
+  .job-title {
+    font-size: 1.2rem;
+  }
+  
+  .job-badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    min-width: 50px;
+  }
+  
+  /* Publications mobile */
+  .category-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .publication-card {
+    padding: 1.25rem;
+  }
+  
+  .pub-title {
+    font-size: 1rem;
+  }
+  
+  /* LinkedIn section mobile */
+  .linkedin-link {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer mobile */
+  .site-footer {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Very small screens (phones in portrait) */
+@media (max-width: 320px) {
+  .site-nav ul {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  
+  .site-nav a {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  .tagline-card {
+    margin: 1rem 0.25rem;
+    padding: 1rem 0.75rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .job-meta {
+    font-size: 0.85rem;
+  }
+}
+
+/* Landscape mobile phones */
+@media (max-height: 500px) and (orientation: landscape) {
+  body {
+    padding-top: 50px;
+  }
+  
+  .tagline-card {
+    margin: 1rem auto;
+  }
+  
+  .personal-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
