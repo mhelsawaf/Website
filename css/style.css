@@ -612,3 +612,10 @@ body.is-loaded {
     height: 100px;
   }
 }
+
+/* TEST RULE - DELETE AFTER TESTING */
+@media (max-width: 480px) {
+  body {
+    background-color: red !important;
+  }
+}
