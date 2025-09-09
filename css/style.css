@@ -566,6 +566,9 @@ body.is-loaded {
   body {
     padding-top: 100px; /* Even more space for very small screens */
     padding-bottom: 90px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    background-attachment: fixed;
   }
   
   .site-header .container {
