@@ -615,3 +615,15 @@ body.is-loaded {
     height: 100px;
   }
 }
+
+/* Publication Links */
+.pub-title a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.pub-title a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
