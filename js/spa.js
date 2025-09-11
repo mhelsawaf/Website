@@ -5,7 +5,8 @@
     '/about': { file: 'sections/about.html', title: 'Mohamed Elsawaf — About' },
     '/publications': { file: 'sections/publications.html', title: 'Mohamed Elsawaf — Publications' },
     '/experience': { file: 'sections/experience.html', title: 'Mohamed Elsawaf — Experience' },
-    '/contact': { file: 'sections/contact.html', title: 'Mohamed Elsawaf — Contact' }
+    '/contact': { file: 'sections/contact.html', title: 'Mohamed Elsawaf — Contact' },
+    '/*': {file: 'sections/404.html', title: 'Not found'}
   };
 
   const mainEl = document.getElementById('main-content');

@@ -246,7 +246,7 @@ body.is-loaded {
   filter: brightness(0) invert(1); /* makes the icon white */
 }
 
-/* Content Sections */
+/* Content Sections - UPDATED with unified animation delay */
 .content-section {
   max-width: 1000px;
   margin: 2rem auto;
@@ -257,7 +257,7 @@ body.is-loaded {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.8s ease-out forwards;
-  animation-delay: 0.3s;
+  animation-delay: 0.5s; /* CHANGED from 0.3s to 0.5s for unified timing */
 }
 
 .section-header {
@@ -867,5 +867,3 @@ body.is-loaded {
     padding: 0 0.75rem;
   }
 }
-
-
