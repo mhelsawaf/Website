@@ -43,7 +43,10 @@ body.is-loaded {
   align-items: center;
   justify-content: space-between;
 }
-
+.tagline-card img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
 .site-header {
   position: fixed;
   top: 0;
