@@ -497,7 +497,7 @@ body.is-loaded {
   }
   
   .tagline-card__line {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
   
   .personal-photo {
@@ -722,20 +722,24 @@ body.is-loaded {
   gap: 2rem;
 }
 
-.about-quick-facts, .about-specializations {
+/* QUICK FACTS & SPECIALIZATIONS: restored original visual tokens */
+.about-quick-facts,
+.about-specializations {
   background: #f8f9ff;
   padding: 2rem;
   border-radius: 12px;
   border-left: 4px solid var(--primary-color);
 }
 
-.about-quick-facts h3, .about-specializations h3 {
+.about-quick-facts h3,
+.about-specializations h3 {
   color: var(--primary-color);
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
+/* FACT ITEMS alignment */
 .fact-item {
   display: flex;
   justify-content: space-between;
@@ -751,13 +755,22 @@ body.is-loaded {
 .fact-label {
   font-weight: 500;
   color: #666;
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .fact-value {
   font-weight: 600;
   color: var(--text-color);
+  flex: 0 0 auto;
+  margin-left: 12px;
+  text-align: right;
+  white-space: nowrap;
 }
 
+/* Specializations list styling (unchanged) */
 .about-specializations ul {
   list-style: none;
   padding: 0;
@@ -811,8 +824,21 @@ body.is-loaded {
     font-size: 1.5rem;
   }
   
-  .about-quick-facts, .about-specializations {
+  .about-quick-facts,
+  .about-specializations {
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .fact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fact-value {
+    text-align: left;
+    margin-left: 0;
+    margin-top: 0.25rem;
   }
 }
 
@@ -836,65 +862,5 @@ body.is-loaded {
   
   .about-container {
     padding: 0 0.75rem;
-  }
-}
-
-/* Quick Facts alignment — paste in your main CSS */
-.about-quick-facts {
-  padding: 1rem;
-  border-radius: 8px;
-  background: var(--card-bg, #fff);
-  box-shadow: var(--card-shadow, 0 1px 3px rgba(0,0,0,0.06));
-}
-
-/* Title spacing */
-.about-quick-facts > h3 {
-  margin: 0 0 0.75rem 0;
-  font-size: 1.05rem;
-}
-
-/* Make label/value a single row, label left, value right */
-.fact-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  padding: 0.45rem 0;
-  border-bottom: 1px solid rgba(0,0,0,0.04); /* optional divider */
-}
-
-/* Keep label flexible so long labels don't overflow the value */
-.fact-label {
-  flex: 1 1 auto;
-  font-weight: 600;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/* Value sticks to the right and does not wrap */
-.fact-value {
-  flex: 0 0 auto;
-  margin-left: 12px;
-  text-align: right;
-  white-space: nowrap;
-  color: var(--muted-text, #666);
-}
-
-/* Remove divider from last item */
-.fact-item:last-child {
-  border-bottom: none;
-}
-
-/* Responsive: stack label/value on small screens */
-@media (max-width: 640px) {
-  .fact-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .fact-value {
-    text-align: left;
-    margin-left: 0;
-    margin-top: 0.25rem;
   }
 }
